@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Graph</title>
+    <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-forcegraph-component/dist/aframe-forcegraph-component.min.js"></script>
+</head>
+ 
+<body>
+    <a-scene class="fullscreen">
+        
+        <a-camera  position="-90.194 1.6 -15.607" rotation="11.217297506657324 -49.75208648231137 0" camera="active:false" look-controls="" data-aframe-inspector-original-camera="">
+            <a-cursor color="lavender" opacity="0.5" raycaster="" cursor=""></a-cursor>
+            <a-text position="0 -0.1 -1" width="1" text="" align="center" color="lavender" value=""></a-text>
+            <a-text position="0 -0.5 -1" width="2" text="" align="center" color="lavender" value=""></a-text>
+        </a-camera>
+      
+      <a-entity forcegraph="json-url: miserables.json; name-field: id; auto-color-by: group"></a-entity>
+    
+    </a-scene>
+  
+    <textarea readonly="" style="font-size: 12pt; border: 0px; padding: 0px; margin: 0px; position: absolute; left: -9999px; top: 0px;"></textarea>
+    
+    wasd-controls="acceleration:600;fly:true"
+</body>
+</html>
+
